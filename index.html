@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Green Terrain Solutions</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Full-page background image */
+    body {
+      background: url(Irrigation-Banner-Pic-scaled.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #4a3c2a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Logo and title side-by-side */
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 12px; /* space between logo and text */
+    }
+
+    .logo-title img {
+      width: 50px;   /* adjust size as needed */
+      height: auto;
+    }
+
+    .logo-title h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #9acd32;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 65vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+      margin-top: 15px;
+    }
+
+    .hero h2 .highlight {
+      color: #90ee90; /*lighter green for "greener" */
+      font-weight: bold;
+    }
+
+    /* Content Sections */
+    .content-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .content-section:hover {
+      transform: scale(1.01);
+    }
+
+    .content-section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #4a3c2a;
+      text-align: center;
+    }
+
+    .content-section p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      text-align: center;
+      color: #555;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input, textarea, button {
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #2e8b57;
+    }
+
+    button {
+      background-color: #4a3c2a;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #2e8b57;
+      transform: scale(1.03);
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      font-size: 1.1rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-title">
+      <img src="logo.png" alt="Company Logo">
+      <h1>Green Terrain Solutions</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#quote">Free Quote</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Where the grass is <span class="highlight">greener</span></h2>
+  </section>
+
+  <!-- About Section -->
+  <section class="content-section" id="about">
+    <h3>About Our Company</h3>
+    <p>We provide top-notch irrigation services focused on installs, repairs, and sustainable lawn care. We guarantee to keep your landscape lush, healthy, and water-efficient. Our core mission is simple:<strong> to bring intelligent, efficient, and aesthetically superior irrigation solutions to our clients--so their properties thrive, effortlessly.</strong></p>
+  </section>
+
+  <!-- Free Quote Section -->
+  <section class="content-section" id="quote">
+    <h3>Get a Free Quote</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone Number" required>
+      <textarea rows="4" placeholder="How can we help you?" required></textarea>
+      <button type="submit">Request Quote</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="content-section" id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact-info">
+      <p>📞 (902) 670-9432</p>
+      <p>📧 info@gtsirrigation.ca</p>
+      <p>📍 1299 Ridge Road, Wolfville, NS</p>
+    </div>
+  </section>
+</body>
+</html>
